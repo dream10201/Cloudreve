@@ -1,4 +1,4 @@
 [submodule "assets"]
 	path = assets
-	url = https://github.com/cloudreve/frontend.git
+	url = https://github.com/dream10201/frontend.git
 	branch = master
