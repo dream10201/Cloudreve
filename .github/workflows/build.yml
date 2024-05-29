@@ -27,7 +27,9 @@ jobs:
           distribution: goreleaser
           version: latest
           args: release --clean --skip-validate
-          goos: linux
-          goarch: amd64
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artifact
+          path: dist/
